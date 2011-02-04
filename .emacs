@@ -1,3 +1,14 @@
+;; Are we on MacOS X?
+(defvar macosx-p (string-match "darwin" (symbol-name system-type)))
+
+;; Command is meta, option is nothing (which means I can use stuff
+;; like option-8 for [ as we do on Swedish keyboard layouts)
+(if macosx-p
+    (progn
+      (setq mac-command-modifier 'meta)
+      (setq mac-option-modifier nil)))
+
+;; Set up the site-lisp directory (some of this is probably redundant)
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 (setq emacs-config-path "~/.emacs.d/")
