@@ -53,24 +53,27 @@
 (require 'pymacs)
 (pymacs-load "ropemacs" "rope-")
 
+;; Show line and column numbers
 (setq line-number-mode 't)
 (setq column-number-mode 't)
 
-;; Färga området som markeras med CTRL-space
+;; Color mark
 (transient-mark-mode t)
 
-;; Ett markerat område kan tas bort med DEL eller skrivas över
+;; Remove selection on modify
 (delete-selection-mode t)
 
-;; Matcha paranteser
+;; Show matching parenthesis
 (show-paren-mode)
 
-;; Ser till att man inte kan gå längre än till slutet av filen.
+;; Can't go past last line of file
 (set-variable 'next-line-add-newlines nil)
 
+;; Nice keybindings
 (global-set-key "\C-cg" 'goto-line)
 (global-set-key "\C-cu" 'uncomment-region)
 
+;; Nice buffer switching mode, but where's iswitchb nowadays? :/
 (ido-mode)
 
 (custom-set-variables
