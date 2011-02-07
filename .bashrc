@@ -24,11 +24,8 @@ function u() { if [ "$2" != "" ]; then ui -n $1 $2; else ui -u $1; fi; }
 # fingrar en person på för- och efternamn
 function tumme() { finger $1 |grep -i $2; }
 
-#PS1="[\[\e]2;\h:
-\w\a\e]1;\e[01;32m\]\u\[\e[0;0m\]@\[\e[01;33m\]\h\[\e[0;0m\]]
-\[\e[01;29m\]\w\[\e[0;0m\] \\$ "
-PS1="[\[\e[01;32m\]\u\[\e[0;0m\]@\[\e[01;33m\]\h\[\e[0;0m\]]
-\[\e[01;29m\]\w\[\e[0;0m\] \\$ "
+#PS1="[\[\e]2;\h:\w\a\e]1;\e[01;32m\]\u\[\e[0;0m\]@\[\e[01;33m\]\h\[\e[0;0m\]]\[\e[01;29m\]\w\[\e[0;0m\] \\$ "
+PS1="[\[\e[01;32m\]\u\[\e[0;0m\]@\[\e[01;33m\]\h\[\e[0;0m\]]\[\e[01;29m\]\w\[\e[0;0m\] \\$ "
 
 # för projekt elbonia (prupp)
 #export CVSROOT="/misc/projects/proj03/elbonia/cvs"
