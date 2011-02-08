@@ -87,6 +87,10 @@
 ;; Nice buffer switching mode, but where's iswitchb nowadays? :/
 (ido-mode)
 
+;; No sound when we reach beginning or end of buffer (don't ask me why
+;; the value should be this, a value of nil enables the sound)
+(setq ring-bell-function (lambda nil (message "")))
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
   ;; Your init file should contain only one such instance.
