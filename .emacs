@@ -64,6 +64,9 @@
 (require 'pymacs)
 (pymacs-load "ropemacs" "rope-")
 
+;; Indent with spaces
+(set-variable 'indent-tabs-mode nil)
+
 ;; Show line and column numbers
 (setq line-number-mode 't)
 (setq column-number-mode 't)
