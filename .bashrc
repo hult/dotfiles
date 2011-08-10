@@ -8,3 +8,6 @@ export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
 
 # Git
 alias gitdiff="git diff --color=always --word-diff=color $*"
+
+# I hate vim
+export EDITOR=emacs
