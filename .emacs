@@ -20,6 +20,7 @@
 (add-path "")
 (add-path "pymacs")
 (add-path "python-mode")
+(add-path "revbufs")
 (add-to-list 'load-path "~/.emacs.d")
 
 ;; python-mode
@@ -50,6 +51,8 @@
       )
 )
 
+(require 'revbufs)
+
 ;; pymacs
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call "pymacs")
@@ -62,8 +65,8 @@
 
 ;; enable pymacs
 ;;
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
+;;(require 'pymacs)
+;;(pymacs-load "ropemacs" "rope-")
 
 ;; Indent with spaces
 (set-variable 'indent-tabs-mode nil)
@@ -87,6 +90,7 @@
 ;; Nice keybindings
 (global-set-key "\C-cg" 'goto-line)
 (global-set-key "\C-cu" 'uncomment-region)
+(global-set-key "\C-cr" 'revbufs)
 
 ;; Nice buffer switching mode, but where's iswitchb nowadays? :/
 (ido-mode)
