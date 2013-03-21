@@ -71,6 +71,11 @@
 ;; Indent with spaces
 (set-variable 'indent-tabs-mode nil)
 
+;; And indent with spaces in JavaScript, why is this needed?
+(setq js-mode-hook
+  '(lambda () (progn
+    (set-variable 'indent-tabs-mode nil))))
+
 ;; Show line and column numbers
 (setq line-number-mode 't)
 (setq column-number-mode 't)
