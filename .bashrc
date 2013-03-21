@@ -11,3 +11,4 @@ alias gitdiff="git diff --color=always --word-diff=color $*"
 
 # I hate vim
 export EDITOR=emacs
+PATH=$PATH:/usr/local/sbin
