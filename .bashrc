@@ -6,6 +6,11 @@ export MAGICK_HOME="$HOME/bin/ImageMagick-6.6.7"
 export PATH="$PATH:$MAGICK_HOME/bin"
 export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
 
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Git
 alias gitdiff="git diff --color=always --word-diff=color $*"
 
