@@ -6,9 +6,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# I hate vim
-export EDITOR=emacs
-
 # ~/bin
 export PATH=$PATH:~/bin
 
