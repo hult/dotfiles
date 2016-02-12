@@ -97,9 +97,6 @@
 (global-set-key "\C-cu" 'uncomment-region)
 (global-set-key "\C-cr" 'revbufs)
 
-;; Nice buffer switching mode, but where's iswitchb nowadays? :/
-(ido-mode)
-
 ;; No sound when we reach beginning or end of buffer (don't ask me why
 ;; the value should be this, a value of nil enables the sound)
 (setq ring-bell-function (lambda nil (message "")))
