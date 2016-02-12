@@ -1,5 +1,5 @@
 ;; Are we on MacOS X?
-(defvar macosx-p (string-match "darwin" (symbol-name system-type)))
+;;(defvar macosx-p (string-match "darwin" (symbol-name system-type)))
 
 ;; Command is meta, option is nothing (which means I can use stuff
 ;; like option-8 for [ as we do on Swedish keyboard layouts)
@@ -96,9 +96,6 @@
 (global-set-key "\C-cg" 'goto-line)
 (global-set-key "\C-cu" 'uncomment-region)
 (global-set-key "\C-cr" 'revbufs)
-
-;; Nice buffer switching mode, but where's iswitchb nowadays? :/
-(ido-mode)
 
 ;; No sound when we reach beginning or end of buffer (don't ask me why
 ;; the value should be this, a value of nil enables the sound)
