@@ -15,6 +15,7 @@
 (setq emacs-config-path "~/.emacs.d/")
 (setq base-lisp-path "~/.emacs.d/site-lisp/")
 (setq site-lisp-path (concat emacs-config-path "/site-lisp"))
+;; LOL2
 (defun add-path (p)
   (add-to-list 'load-path (concat base-lisp-path p)))
 
