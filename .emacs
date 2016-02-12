@@ -1,5 +1,5 @@
 ;; Are we on MacOS X?
-(defvar macosx-p (string-match "darwin" (symbol-name system-type)))
+;;(defvar macosx-p (string-match "darwin" (symbol-name system-type)))
 
 ;; Command is meta, option is nothing (which means I can use stuff
 ;; like option-8 for [ as we do on Swedish keyboard layouts)
