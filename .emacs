@@ -23,6 +23,7 @@
 (add-path "revbufs")
 (add-to-list 'load-path "~/.emacs.d")
 
+;; LOL
 ;; python-mode
 ;;
 (setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
