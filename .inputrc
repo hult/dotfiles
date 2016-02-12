@@ -3,3 +3,4 @@
 # commands in your history
 "\e[B": history-search-forward
 "\e[A": history-search-backward
+# LOL

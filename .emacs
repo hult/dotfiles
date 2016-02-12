@@ -11,6 +11,7 @@
 ;; Set up the site-lisp directory (some of this is probably redundant)
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
+;; LOL
 (setq emacs-config-path "~/.emacs.d/")
 (setq base-lisp-path "~/.emacs.d/site-lisp/")
 (setq site-lisp-path (concat emacs-config-path "/site-lisp"))
